@@ -1,8 +1,8 @@
-.description-screen {
+.about-app {
     padding-top: 70px;
 }
 
-.description-screen__item {
+.about-app__item {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -13,11 +13,11 @@
     height: 655px;
 }
 
-.description-screen__item img {
+.about-app__image {
     margin-bottom: 205px;
 }
 
-.description-screen__item-content {
+.about-app__content {
     text-align: left;
     width: 560px;
 }
