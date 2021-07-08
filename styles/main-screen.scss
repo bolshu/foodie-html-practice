@@ -4,7 +4,9 @@
 }
 
 .main-screen__content {
-    background-image: url(img/food.png);
+    background-image: url(../img/food.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
     background-color: grey;
     padding-top: 75px;
     padding-bottom: 160px;
