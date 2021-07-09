@@ -5,3 +5,47 @@
     margin-top: 37px;
     margin-bottom: 55px;
 }
+
+.footer__copyrite {
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.footer__social {
+    font-size: 0;
+}
+
+.social-btn {
+    display: inline-block;
+    margin-right: 33px;
+    vertical-align: middle;
+    color: #a51b1b;
+    background-image: url("../img/spritesheet.png");
+    background-repeat: no-repeat;
+    &:hover {
+        transform: scale(1.2);
+    }
+    &:active {
+        opacity: 0.5;
+    }
+}
+
+.btn-tw {
+    width: 35px;
+    height: 28px;
+    background-position: -5px -54px;
+}
+
+.btn-fb {
+    width: 33px;
+    height: 33px;
+    background-position: -5px -5px;
+}
+
+.btn-in {
+    width: 39px;
+    height: 39px;
+    background-position: -48px -5px;
+    margin-right: 0;
+}
