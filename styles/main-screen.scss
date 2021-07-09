@@ -38,38 +38,3 @@
 .main-screen__btn {
     margin-top: 50px;
 }
-
-.main-screen__btn a {
-    font-weight: 700;
-    line-height: 36px;
-    text-decoration: none;
-    color: #ffffff;
-    border-radius: 30px;
-    padding: 16px 50px 16px 50px;
-}
-
-.playstore {
-    margin-right: 30px;
-    background: #fa4a0c;
-    border: 1px solid #fa4a0c;
-    &:hover {
-        font-size: 26px;
-    }
-    &:active {
-        background: #ffffff;
-        border: 1px solid #ffffff;
-        color: #fa4a0c;
-    }
-}
-
-.app-store {
-    border: 1px solid #ffffff;
-    &:hover {
-        font-size: 26px;
-    }
-    &:active {
-        background: #ffffff;
-        border: 1px solid #ffffff;
-        color: #fa4a0c;
-    }
-}
