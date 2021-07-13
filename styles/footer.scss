@@ -9,7 +9,7 @@
 .footer__copyrite {
     font-size: 12px;
     line-height: 18px;
-    color: #5C5C5C;
+    color: map-get($colors, 'silver-grey');
 }
 
 .footer__social {
@@ -23,7 +23,7 @@
     height: 40px;
     margin-right: 24px;
     vertical-align: middle;
-    color: #fa4a0c;
+    color: map-get($colors, 'orange');
     &::before {
         position: absolute;
         content: "";

@@ -4,11 +4,11 @@
 }
 
 .about-app__heading {
-    color: #000000;
+    color: map-get($colors, 'black');
     font-size: 44px;
     line-height: 36px;
     font-weight: 600;
-    border-top: 3px solid #e4e4e4;
+    border-top: 3px solid map-get($colors, 'light-grey');
     padding-top: 70px;
 }
 
@@ -31,7 +31,7 @@
 
 .about-app__content-caption {
     font-weight: 700;
-    color: #fa4a0c;
+    color: map-get($colors, 'orenge');
     margin-bottom: 17px;
 }
 

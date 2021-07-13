@@ -7,11 +7,13 @@
     background-image: url(../img/food.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: grey;
+    background-color: map-get($colors, 'grey');
+    ;
     padding-top: 75px;
     padding-bottom: 160px;
     text-align: center;
-    color: #ffffff;
+    color: map-get($colors, 'white');
+    ;
 }
 
 .main-screen__title {
