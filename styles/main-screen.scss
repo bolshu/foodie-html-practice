@@ -1,6 +1,6 @@
 .main-screen {
     position: relative;
-    padding-bottom: 640px;
+    padding-bottom: 530px;
 }
 
 .main-screen__content {
@@ -27,12 +27,15 @@
 }
 
 .main-screen__image {
+    display: block;
     position: absolute;
     left: 50%;
-    bottom: 1.5%;
+    bottom: 50px;
     transform: translate(-50%);
-    padding-bottom: 130px;
-    border-bottom: 3px solid #e4e4e4;
+}
+
+.main-screen__img {
+    display: block;
 }
 
 .main-screen__btn {
