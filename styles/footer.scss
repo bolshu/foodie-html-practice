@@ -4,6 +4,28 @@
     align-items: center;
     margin-top: 37px;
     margin-bottom: 55px;
+    @include for-tablet-large {
+        flex-direction: column;
+    }
+    @include for-tablet {
+        flex-direction: column;
+    }
+    @include for-mobile {
+        flex-direction: column;
+    }
+}
+
+.footer__logo {
+    display: block;
+    @include for-tablet-large {
+        display: none;
+    }
+    @include for-tablet {
+        display: none;
+    }
+    @include for-mobile {
+        display: none;
+    }
 }
 
 .footer__copyrite {

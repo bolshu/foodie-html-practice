@@ -1,6 +1,15 @@
 .about-app {
     padding-top: 70px;
     text-align: center;
+    @include for-tablet-large {
+        padding-top: 50px;
+    }
+    @include for-tablet {
+        padding-top: 50px;
+    }
+    @include for-mobile {
+        padding-top: 50px;
+    }
 }
 
 .about-app__heading {
@@ -10,6 +19,27 @@
     font-weight: 600;
     border-top: 3px solid map-get($colors, 'light-grey');
     padding-top: 70px;
+    @include for-tablet-large {
+        border-bottom: 3px solid map-get($colors, 'light-grey');
+        border-top: none;
+        padding-bottom: 50px;
+        padding-top: 0;
+        font-size: 24px;
+    }
+    @include for-tablet {
+        border-bottom: 3px solid map-get($colors, 'light-grey');
+        border-top: none;
+        padding-bottom: 50px;
+        padding-top: 0;
+        font-size: 24px;
+    }
+    @include for-mobile {
+        border-bottom: 3px solid map-get($colors, 'light-grey');
+        border-top: none;
+        padding-bottom: 50px;
+        padding-top: 0;
+        font-size: 24px;
+    }
 }
 
 .about-app__item {
@@ -21,18 +51,54 @@
     margin-bottom: 205px;
     &:nth-of-type(2) {
         flex-direction: row-reverse;
+        @include for-tablet-large {
+            flex-direction: column;
+        }
+        @include for-tablet {
+            flex-direction: column;
+        }
+        @include for-mobile {
+            flex-direction: column;
+        }
+    }
+    @include for-tablet-large {
+        flex-direction: column;
+    }
+    @include for-tablet {
+        flex-direction: column;
+    }
+    @include for-mobile {
+        flex-direction: column;
     }
 }
 
 .about-app__content {
     text-align: left;
     width: 560px;
+    @include for-tablet-large {
+        text-align: center;
+    }
+    @include for-tablet {
+        text-align: center;
+    }
+    @include for-mobile {
+        text-align: center;
+    }
 }
 
 .about-app__content-caption {
     font-weight: 700;
-    color: map-get($colors, 'orenge');
+    color: map-get($colors, 'orange');
     margin-bottom: 17px;
+    @include for-tablet-large {
+        margin-bottom: 40px;
+    }
+    @include for-tablet {
+        margin-bottom: 40px;
+    }
+    @include for-mobile {
+        margin-bottom: 40px;
+    }
 }
 
 .about-app__content-heading {
@@ -41,8 +107,38 @@
     line-height: 57px;
     margin-top: 0;
     margin-bottom: 27px;
+    @include for-tablet-large {
+        margin-bottom: 50px;
+        color: map-get($colors, 'grey');
+    }
+    @include for-tablet {
+        margin-bottom: 50px;
+        color: map-get($colors, 'grey');
+    }
+    @include for-mobile {
+        margin-bottom: 50px;
+        color: map-get($colors, 'grey');
+    }
 }
 
 .about-app__content-text {
     margin-top: 0;
+}
+
+.about-app__item__image {
+    @include for-tablet-large {
+        order: 3;
+        margin-top: 40px;
+        padding-bottom: 0;
+    }
+    @include for-tablet {
+        order: 3;
+        margin-top: 40px;
+        padding-bottom: 0;
+    }
+    @include for-mobile {
+        order: 3;
+        margin-top: 40px;
+        padding-bottom: 0;
+    }
 }
