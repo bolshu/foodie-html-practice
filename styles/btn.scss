@@ -19,30 +19,13 @@
     }
     &:active {
         color: map-get($colors, 'orange');
-        background-color: map-get($colors, 'orange');
-        border: 1px solid map-get($colors, 'orange');
-    }
-}
-
-.btn-block-first .btn--second {
-    @include for-tablet-large {
-        margin-top: 20px;
-        color: map-get($colors, 'orange');
-        border-color: map-get($colors, 'orange');
-    }
-    @include for-tablet {
-        margin-top: 20px;
-        color: map-get($colors, 'orange');
-        border-color: map-get($colors, 'orange');
-    }
-    @include for-mobile {
-        margin-top: 20px;
-        color: map-get($colors, 'orange');
-        border-color: map-get($colors, 'orange');
+        background-color: map-get($colors, 'white');
+        border: 1px solid map-get($colors, 'white');
     }
 }
 
 .btn--second {
     background-color: transparent;
-    border-color: map-get($colors, 'white');
+    border-color: map-get($colors, 'orange');
+    color: map-get($colors, 'orange');
 }

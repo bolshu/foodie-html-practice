@@ -1,81 +1,55 @@
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header__mobile-menu {
-    display: none;
-    width: 20px;
-    @include for-tablet-large {
-        display: block;
-        margin-right: 20px;
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
-    &line {
-        margin-bottom: 3px;
-    }
-    &:last-child {
-        margin-bottom: 0;
-    }
-    @include for-tablet {
-        display: block;
-        margin-right: 20px;
-    }
-    &line {
-        margin-bottom: 3px;
-    }
-    &:last-child {
-        margin-bottom: 0;
-    }
-    @include for-mobile {
-        display: block;
-        margin-right: 5px;
-    }
-    &line {
-        margin-bottom: 3px;
-    }
-    &:last-child {
-        margin-bottom: 0;
-    }
-}
-
-.header__menu {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    @include for-tablet-large {
+    
+    .header__mobile-menu {
         display: none;
+        width: 20px;
+        @include for-tablet-large {
+            display: block;
+            margin-right: 20px;
+        }
+        &line {
+            margin-bottom: 3px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
-    @include for-tablet {
-        display: none;
+    
+    .header__menu {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        @include for-tablet-large {
+            display: none;
+        }
     }
-    @include for-mobile {
-        display: none;
+    
+    .header__menu-item {
+        margin-right: 115px;
+        &:last-child {
+            margin-right: 0;
+        }
     }
-}
-
-.header__menu-item {
-    margin-right: 115px;
-    &:last-child {
-        margin-right: 0;
+    
+    .header__menu-link {
+        display: block;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.75;
+        color: map-get($colors, 'grey');
+        &:hover {
+            transform: scale(1.2);
+        }
+        &:active {
+            color: map-get($colors, 'orange');
+        }
+        &--active {
+            color: map-get($colors, 'orange');
+        }
     }
-}
-
-.header__menu-link {
-    display: block;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.75;
-    color: map-get($colors, 'grey');
-    &:hover {
-        transform: scale(1.2);
-    }
-    &:active {
-        color: map-get($colors, 'orange');
-    }
-    &--active {
-        color: map-get($colors, 'orange');
-    }
-}

@@ -7,23 +7,11 @@
     @include for-tablet-large {
         flex-direction: column;
     }
-    @include for-tablet {
-        flex-direction: column;
-    }
-    @include for-mobile {
-        flex-direction: column;
-    }
 }
 
 .footer__logo {
     display: block;
     @include for-tablet-large {
-        display: none;
-    }
-    @include for-tablet {
-        display: none;
-    }
-    @include for-mobile {
         display: none;
     }
 }

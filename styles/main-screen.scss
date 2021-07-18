@@ -19,32 +19,12 @@
         color: map-get($colors, 'silver');
         padding-top: 50px;
     }
-    @include for-tablet {
-        display: block;
-        background-image: none;
-        background-color: map-get($colors, 'white');
-        color: map-get($colors, 'silver');
-        padding-top: 50px;
-    }
-    @include for-mobile {
-        display: block;
-        background-image: none;
-        background-color: map-get($colors, 'white');
-        color: map-get($colors, 'silver');
-        padding-top: 50px;
-    }
 }
 
 .main-screen__title {
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 17px;
     @include for-tablet-large {
-        font-size: 16px;
-    }
-    @include for-tablet {
-        font-size: 16px;
-    }
-    @include for-mobile {
         font-size: 16px;
     }
 }
@@ -58,38 +38,29 @@
         font-size: 36px;
         color: map-get($colors, 'grey');
     }
-    @include for-tablet {
-        font-size: 36px;
-        color: map-get($colors, 'grey');
-    }
-    @include for-mobile {
-        font-size: 36px;
-        color: map-get($colors, 'grey');
-    }
 }
 
 .main-screen__image {
     display: block;
-    position: absolute;
-    left: 50%;
-    bottom: 50px;
-    transform: translate(-50%);
+    margin: -150px auto 0;
+    max-width: 800px;
     @include for-tablet-large {
-        transform: scale (-70%, -70%);
         margin: 0 20px;
+        max-width: 750px;
     }
     @include for-tablet {
-        transform: scale (-70%, -70%);
         margin: 0 20px;
+        max-width: 650px;
     }
     @include for-mobile {
-        transform: scale (-70%, -70%);
         margin: 0 20px;
+        max-width: 550px;
     }
 }
 
 .main-screen__img {
     display: block;
+    width: 100%;
 }
 
 .main-screen__btn {

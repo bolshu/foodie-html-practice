@@ -10,24 +10,12 @@
     @include for-tablet-large {
         background-image: none;
     }
-    @include for-tablet {
-        background-image: none;
-    }
-    @include for-mobile {
-        background-image: none;
-    }
 }
 
 .download__title {
     font-size: 40px;
     line-height: 57px;
     @include for-tablet-large {
-        margin: 120px 54px 20px 54px;
-    }
-    @include for-tablet {
-        margin: 120px 54px 20px 54px;
-    }
-    @include for-mobile {
         margin: 120px 54px 20px 54px;
     }
 }
