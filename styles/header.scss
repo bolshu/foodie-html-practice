@@ -8,9 +8,10 @@
     .header__mobile-menu {
         display: none;
         width: 20px;
+        margin-right: 20px;
         @include for-tablet-large {
             display: block;
-            margin-right: 20px;
+            margin-right: 5px;
         }
         &line {
             margin-bottom: 3px;

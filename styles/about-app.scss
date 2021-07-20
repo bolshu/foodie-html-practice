@@ -10,7 +10,7 @@
                 color: map-get($colors, 'black');
                 font-size: 44px;
                 line-height: 36px;
-                font-weight: map-get($weight, 'bolder');
+                font-weight: map-get($weight, 'bold');
                 border-top: 3px solid map-get($colors, 'light-grey');
                 padding-top: 70px;
                 @include for-tablet-large {
@@ -58,7 +58,7 @@
             }
             
             .about-app__content-heading {
-                font-weight: map-get($weight, 'bolder');
+                font-weight: map-get($weight, 'bold');
                 font-size: 40px;
                 line-height: 57px;
                 margin-top: 0;
